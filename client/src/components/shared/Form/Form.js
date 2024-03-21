@@ -167,14 +167,14 @@ const Form = ({ formType, submitBtn, formTitle }) => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <InputType
+                  {/* <InputType
                     labelText={"website"}
                     labelFor={"forWebsite"}
                     inputType={"text"}
                     name={"website"}
                     value={website}
                     onChange={(e) => setWebsite(e.target.value)}
-                  />
+                  /> */}
                   <InputType
                     labelText={"Address"}
                     labelFor={"forAddress"}
@@ -205,7 +205,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             </p>
           ) : (
             <p>
-              ALready Usser Please
+              Already User Please
               <Link to="/login"> Login !</Link>
             </p>
           )}
